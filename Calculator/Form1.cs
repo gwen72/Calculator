@@ -20,8 +20,6 @@ namespace Calculator
         private void Cal_Form_Load(object sender, EventArgs e)
         {
 
-     
-    
         }
     }
 }
