@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using static System.Math;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -105,5 +106,34 @@ namespace Calculator
         {
             Output.Text += "/";
         }
+
+        private void Sqrt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double ans = Sqrt(Double.Parse(Output.Text));
+                Output.Text = ans.ToString();
+
+            }
+            catch (Exception E)
+            {
+                MessageBox.Show(E.Message);
+
+            }
+         }
+
+        private void Pow_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double ans = Pow(Double.Parse(Output.Text), 2);
+                Output.Text = ans.ToString();
+            }
+            catch(Exception E)
+            {
+                MessageBox.Show(E.Message);
+           }
+       }
     }
-}
+ }
+
